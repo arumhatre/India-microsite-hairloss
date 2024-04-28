@@ -51,6 +51,11 @@ body {
   padding-right: 20px;
  }
 
+ .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link{
+   font-weight: 600;
+   border-bottom: 3px solid #ed1d26;
+ }
+
  @media screen and (max-width: 1600px){
 
     .navbar-light .navbar-nav .nav-link{
@@ -225,6 +230,12 @@ body {
 /* Testimonials css*/
 /*==========================================*/
 
+.testmonils_slider{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+
 .test-v-cls {
   bottom: 10px;
   position: absolute;
@@ -241,6 +252,129 @@ body {
   width: 70px !important;
 }
 
+#main {
+  width: 100%;
+  background: url(http://akveo.com/blur-admin/assets/img/blur-bg.jpg) center no-repeat fixed;
+  background-size: 2000px 1000px;
+}
+#main:after {
+  clear: both;
+  content: "";
+  display: block;
+  width: 100%;
+}
+#filter {
+  width: 90%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+#filter:after {
+  clear: both;
+  content: "";
+  display: block;
+  width: 100%;
+}
+#filters {
+  width: 100%;
+  text-align: center;
+}
+#filters li {
+  color: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-shadow: 1px 1px 0 0 rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.06);
+  transition: all 0.5s ease;
+}
+#filters li:hover {
+  background: rgba(0, 0, 0, 0.25);
+}
+#container {
+  width: 100%;
+}
+#container:after {
+  clear: both;
+  content: "";
+  display: block;
+  width: 100%;
+}
+#container .filter-item {
+  transform: scale(1);
+  visibility: visible;
+  height: 30vh;
+  width: 31.33333333%;
+  margin: 1%;
+  opacity: 1;
+  float: left;
+  transition: all 0.5s ease;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+#container .filter-item:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  filter: blur(20px);
+}
+#container .filter-item:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-shadow: 1px 1px 0 0 rgba(255, 255, 255, 0.12);
+  border-radius: 5px;
+}
+#container .filter-item.first {
+  background: url(http://akveo.com/blur-admin/assets/img/blur-bg-blurred.jpg) center no-repeat fixed;
+  background-size: 2000px 1000px;
+}
+#container .filter-item.first:before {
+  display: none;
+}
+#container .filter-item.hidden {
+  width: 0;
+  height: 0;
+  margin: 0;
+  transform: scale(0);
+  opacity: 0;
+  visibility: hidden;
+}
+
+
+
+
+.testmonilas_list{
+  display: flex
+}
+
+.testmonilas_list li{
+    padding: 14px 30px;
+    color: #30292b;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 114%;
+    letter-spacing: .7px;
+    margin-right: 20px;
+    transition: .5s ease-in;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #30292b;
+    justify-content: center
+}
 
 @media screen and (max-width: 1680px){
    .resultsImg{
@@ -254,7 +388,7 @@ body {
 @media screen and (max-width: 1600px){
    .resultsImg{
     position: absolute;
-    bottom: 240px;
+    bottom: 215px;
     right: 10px;
   }
 }
@@ -270,11 +404,18 @@ body {
 }
 
 
+@media screen and (max-width: 1280px){
+   .resultsImg{
+    position: absolute;
+    bottom: 204px;
+    right: 10px;
+  }
+}
 
 @media screen and (max-width: 1366px){
    .resultsImg{
     position: absolute;
-    bottom: 204px;
+    bottom: 175px;
     right: 10px;
   }
 }
@@ -378,8 +519,6 @@ body {
   }
 
 }
-
-
 
 .text-play-btn-img {
   width: 30px !important;
@@ -510,6 +649,10 @@ body {
 /* tratment slider css*/
 /*==========================================*/
 
+
+.our_traetment_sec{
+  padding-bottom: 50px;
+}
 
 #tratment_slider .owl-carousel .owl-item img{
   width: auto;
@@ -1063,7 +1206,7 @@ body {
 
 @media screen and (max-width: 1600px){
   .new_container_slider_wid{
-    padding-left: 117px;
+    padding-left: 83px;
   }
 }
 
@@ -1214,14 +1357,143 @@ body {
 /* key resone css*/
 /*==========================================*/
 
+.key_resasons_sec{
+  padding-bottom: 50px;
+}
+
+
 .key-resone-row{
   padding-top: 20px;
 }
 
 
 /*==========================================*/
+/* Doctor section css*/
+/*==========================================*/
+
+
+
+.doctorsContent h4{
+  padding-top: 5px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.doctorsContent h3{
+  font-size: 21px;
+  font-weight: 500;
+}
+
+.doctorsContent p{
+  font-size: 14px;
+  font-weight: 400;
+}
+
+
+
+/*==========================================*/
+/* Myth section css*/
+/*==========================================*/
+
+
+#myth_slider .owl-dots {
+  text-align: center;
+}
+#myth_slider .owl-dots button.owl-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  background: #30292b;
+  margin: 0 3px;
+}
+#myth_slider .owl-dots button.owl-dot.active {
+  background-color: #ed1c24;
+  width: 50px;
+  border-radius: 8px;
+}
+#myth_slider .owl-dots button.owl-dot:focus {
+  outline: none;
+}
+#myth_slider .owl-nav button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.38) !important;
+}
+#myth_slider .owl-nav button:focus {
+  outline: none;
+}
+
+
+#myth_slider_01 .owl-dots {
+  text-align: center;
+}
+#myth_slider_01 .owl-dots button.owl-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  background: #30292b;
+  margin: 0 3px;
+}
+#myth_slider_01 .owl-dots button.owl-dot.active {
+  background-color: #ed1c24;
+  width: 50px;
+  border-radius: 8px;
+}
+#myth_slider_01 .owl-dots button.owl-dot:focus {
+  outline: none;
+}
+#myth_slider_01 .owl-nav button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.38) !important;
+}
+#myth_slider_01 .owl-nav button:focus {
+  outline: none;
+}
+
+.debunkingContentBox{
+  padding: 30px;
+  background-color: #0073ae;
+}
+
+.debunkingContentBoxOne{
+  padding: 30px;
+  background-color: #00466a;
+}
+
+.debunkingContentBox h3{
+  color: #fff;
+  font-size: 30px;
+}
+
+.debunkingContentBox p{
+  color: #fff;
+  font-size: 16px;
+}
+
+.debunkingContentBoxOne h3{
+  color: #fff;
+  font-size: 30px;
+}
+
+.debunkingContentBoxOne p{
+  color: #fff;
+  font-size: 16px;
+}
+
+
+/*==========================================*/
 /* combination section css*/
 /*==========================================*/
+
+.our_science_section{
+  padding-bottom: 50px;
+}
 
 .combination_box_border{
   margin-bottom: 30px;
@@ -1307,3 +1579,33 @@ body {
 
 }
 
+
+/*==========================================*/
+/* How it Works css*/
+/*==========================================*/
+
+.how_it_works_sec{
+  padding-bottom: 50px;
+}
+
+.our_tratment_sec_box{
+  padding: 20px 15px 20px 20px;
+  border: 1px solid #636363;
+  height: 215px;
+  margin-bottom: 30px;
+}
+
+.our_tratment_sec_box p{
+  margin-bottom: 0;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 600px){
+  .our_tratment_sec_box{
+    padding: 20px 15px 20px 20px;
+    border: 1px solid #636363;
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+}
