@@ -950,7 +950,7 @@ hr.bannerhr {
   font-size: 13px;
   padding: 10px 0;
   font-weight: 500 !important;
-  margin-bottom: 60px;
+  margin-bottom: 45px;
 }
 }
 
@@ -971,7 +971,7 @@ hr.bannerhr {
 }
 
 .open-button {
-    background-color: #e50f28;
+    background-color: #ed1c24;
     color: white;
     padding: 10px 12px;
     border: none;
@@ -1030,8 +1030,8 @@ hr.bannerhr {
 @media (max-width: 600px){
 
   .open-button {
-    height: 60px;
-    background-color: #1b75ab;
+    height: 45px;
+    background-color: #ed1c24;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -1040,7 +1040,7 @@ hr.bannerhr {
     bottom: 0;
     right: auto;
     left: 0;
-    width: 50%;
+    width: 100%;
     font-weight: 600;
     line-height: 18px;
 }
@@ -1618,7 +1618,7 @@ hr.bannerhr {
 .our_tratment_sec_box{
   padding: 20px 15px 20px 20px;
   border: 1px solid #636363;
-  height: 275px;
+  height: 200px;
   margin-bottom: 30px;
 }
 
@@ -1635,7 +1635,7 @@ hr.bannerhr {
   .our_tratment_sec_box{
   padding: 20px 15px 20px 20px;
   border: 1px solid #636363;
-  height: 280px;
+  height: 230px;
   margin-bottom: 30px;
 }
 }
@@ -1644,7 +1644,7 @@ hr.bannerhr {
   .our_tratment_sec_box{
   padding: 20px 15px 20px 20px;
   border: 1px solid #636363;
-  height: 320px;
+  height: 270px;
   margin-bottom: 30px;
 }
 }
@@ -1653,8 +1653,8 @@ hr.bannerhr {
   .our_tratment_sec_box{
     padding: 20px 15px 20px 20px;
     border: 1px solid #636363;
-    max-height: 350px;
-    height: 300px;
+    max-height: 300px;
+    height: 220px;
     margin-bottom: 30px;
 
   }
