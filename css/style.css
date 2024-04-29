@@ -43,10 +43,10 @@ html {
 
 @media screen and (max-width: 600px){
   .main-all-heading {
-    font-size: 30px;
+    font-size: 32px;
     font-weight: 300;
     color: #30292b;
-    line-height: 36px;
+    line-height: 38px;
   }
 }
 
@@ -1498,6 +1498,11 @@ hr.bannerhr {
   height: 230px;
 }
 
+.debunkingContentBox h3{
+  color: #fff;
+  font-size: 24px;
+}
+
 }
 
 /*==========================================*/
@@ -1613,12 +1618,12 @@ hr.bannerhr {
 .our_tratment_sec_box{
   padding: 20px 15px 20px 20px;
   border: 1px solid #636363;
-  height: 215px;
+  height: 275px;
   margin-bottom: 30px;
 }
 
 .our_tratment_sec_box h3{
-  font-size: 28px;
+  font-size: 24px;
 }
 
 .our_tratment_sec_box p{
@@ -1630,7 +1635,7 @@ hr.bannerhr {
   .our_tratment_sec_box{
   padding: 20px 15px 20px 20px;
   border: 1px solid #636363;
-  height: 250px;
+  height: 280px;
   margin-bottom: 30px;
 }
 }
@@ -1655,7 +1660,7 @@ hr.bannerhr {
   }
 
   .our_tratment_sec_box h3{
-    font-size: 24px;
+    font-size: 21px;
   }
 
   .how_it_works_sec{
@@ -1670,8 +1675,8 @@ hr.bannerhr {
   .our_tratment_sec_box{
     padding: 20px 15px 20px 20px;
     border: 1px solid #636363;
-    max-height: 350px;
-    height: 320px;
+    max-height: 400px;
+    height: 400px;
     margin-bottom: 30px;
   }
 
