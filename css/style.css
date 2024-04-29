@@ -221,7 +221,7 @@ hr.bannerhr {width: 100px;border: 3px solid #0074ad }
 /*==========================================*/
 
 .key_resasons_sec{padding-bottom: 50px;}.key-resone-row{padding-top: 20px;}
-.key-resone-heading{font-size: 20px;}
+.key-resone-heading{font-size: 20px; font-weight: 500}
 @media screen and (max-width: 600px){.key-resone-heading{font-size: 18px;}.key-resone-row img{width: 60px;}.key_resasons_sec{padding-bottom: 40px;}}
 
 /*==========================================*/
