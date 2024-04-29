@@ -31,18 +31,22 @@ html {
 
 
 .main-all-heading {
-    font-size: 45px;
+    font-size: 42px;
     font-weight: 300;
     color: #30292b;
-    line-height: 50px;
+    line-height: 48px;
+}
+
+.main-all-heading  span{
+   font-weight: 300;
 }
 
 @media screen and (max-width: 600px){
   .main-all-heading {
-    font-size: 32px;
+    font-size: 30px;
     font-weight: 300;
     color: #30292b;
-    line-height: 38px;
+    line-height: 36px;
   }
 }
 
@@ -52,7 +56,7 @@ html {
 /*==========================================*/
 
 #kenytChatBubble.style1{
-  margin-bottom: 65px !important;
+  margin-bottom: 100px !important;
 }
 
 /*==========================================*/
@@ -152,6 +156,12 @@ html {
   width: 49%;
 }
 
+hr.bannerhr {
+    width: 100px;
+    border: 3px solid #0074ad
+}
+
+
 @media screen and (max-width: 1440px){
 
   .banner_content_box{
@@ -226,6 +236,12 @@ html {
     font-size:16px;
     font-weight: 300;
   }
+  
+  .banner_content_box img{
+  width: 45%;
+}
+
+
 }
 
 @media screen and (max-width: 600px){
@@ -282,7 +298,8 @@ html {
 
 
 .testmonilas_list{
-  display: ruby-text;
+  display: flex;
+  overflow: auto;
 }
 
 .testmonilas_list a{
@@ -315,6 +332,12 @@ html {
     margin-bottom: 7px;
     margin-right: 5px;
   }
+
+  .testmonils_slider{
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+
 }
 
 @media screen and (max-width: 1680px){
@@ -464,6 +487,13 @@ html {
 .text-play-btn-img {
   width: 30px !important;
   margin-right: 10px !important;
+}
+
+
+.popup-vimeo{
+  display: ruby;
+  color: #fff;
+  font-weight: 600;
 }
 
 .popup-vimeo:hover {
@@ -732,7 +762,11 @@ html {
 .flip-card-front {background: #fff;}
 .flip-card-back {background: white;transform: rotateY(180deg);}
 .flip-card-front {color: white;}
-.flip-card-back h4 {color: #E80088}
+.flip-card-back h4 {color: #30292b; font-size: 21px;margin-bottom: 15px}
+
+.flip-card-back ul li{
+  margin-bottom: 10px;
+}
 
 
 .trat_Slider_img_logo{
@@ -743,6 +777,14 @@ html {
   font-size: 24px;
   color: #30292b;
   font-weight: 500;
+}
+
+@media (max-width: 1024px){
+
+.our_traetment_sec{
+  padding-bottom: 30px;
+}
+
 }
 
 
@@ -929,7 +971,7 @@ html {
 }
 
 .open-button {
-    background-color: #1b75ab;
+    background-color: #e50f28;
     color: white;
     padding: 10px 12px;
     border: none;
@@ -1083,18 +1125,6 @@ html {
   
 }
 
-@media screen and (max-width: 1024px){
-
-      #doctor_slider .owl-nav {
-        text-align: center !important;
-        margin-top: 15px;
-        top: 0;
-        right: 33px;
-        position: relative;
-    }
- 
-}
-
 
 
 @media (max-width: 1024px) {
@@ -1106,7 +1136,7 @@ html {
 
   #doctor_slider .owl-nav {
     text-align: center !important;
-    margin-top: 15px;
+    margin-top: -20px;
     top: 0;
     right: 0;
     position: relative;
@@ -1303,6 +1333,27 @@ html {
   padding-top: 20px;
 }
 
+.key-resone-heading{
+  font-size: 20px;
+}
+
+@media screen and (max-width: 600px){
+
+.key-resone-heading{
+  font-size: 18px;
+}
+
+.key-resone-row img{
+  width: 60px;
+}
+
+.key_resasons_sec{
+  padding-bottom: 40px;
+}
+
+
+}
+
 
 /*==========================================*/
 /* Doctor section css*/
@@ -1437,6 +1488,16 @@ html {
     position: relative;
     margin-top: 0px;
   }
+  
+  .Debunking_Myths_sec{
+  padding-top: 30px;
+}
+
+.debunkingContentBox{
+  max-height: 250px;
+  height: 230px;
+}
+
 }
 
 /*==========================================*/
@@ -1529,6 +1590,15 @@ html {
    border: 1px solid #636363;
 }
 
+.our_science_section{
+  padding-bottom: 30px;
+}
+
+
+.combination_box_border img{
+  width: 40%;
+}
+
 }
 
 
@@ -1581,11 +1651,18 @@ html {
     max-height: 350px;
     height: 300px;
     margin-bottom: 30px;
+
   }
 
   .our_tratment_sec_box h3{
     font-size: 24px;
   }
+
+  .how_it_works_sec{
+  padding-bottom: 30px;
+}
+
+
 }
 
 
@@ -1602,6 +1679,31 @@ html {
     font-size: 24px;
   }
 }
+
+
+@media (max-width: 1024px) {
+
+  .owl-item .item {
+    transform: translate3d(0, 0, 0);
+    padding: 30px 30px 20px;
+  }
+
+  #how_it_works_slider .owl-nav {
+    text-align: center !important;
+    margin-top: -5px;
+    top: 0;
+    right: 0;
+    position: relative;
+    display: block;
+  }
+
+  #how_it_works_slider .owl-nav button {
+    font-size: 30px !important;
+    margin: 0 10px;
+    color: #000000 !important;
+  }
+}
+
 
 
 /*==========================================*/
@@ -1657,3 +1759,6 @@ html {
 .hide {
   display: none;
 }
+
+
+
