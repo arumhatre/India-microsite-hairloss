@@ -1,33 +1,126 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap");
 
-body {font-family: 'Inter', sans-serif;font-size: 16px;font-weight: 400 !important;color: #383838;background: #dadada;}
-html {scroll-behavior: smooth;}
-* {font-family: Inter, sans-serif;font-weight: 400;}
-.font-500 {font-weight: 500!important;}
-.form-control {border: 1px solid #656565;}
-.select2-container {z-index: 9999;}
-.main-all-heading {font-size: 42px;font-weight: 300;color: #30292b;line-height: 48px;}
-.main-all-heading span{font-weight: 300;}
-@media screen and (max-width: 600px){.main-all-heading {font-size: 32px;font-weight: 300;color: #30292b;line-height: 38px;}}
+body {
+font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400 !important;
+  color: #383838;
+  background: #dadada;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+}
+
+.font-500 {
+  font-weight: 500!important;
+}
+
+.form-control {
+  border: 1px solid #656565;
+}
+
+.select2-container {
+  z-index: 9999;
+}
+
+
+.main-all-heading {
+    font-size: 42px;
+    font-weight: 300;
+    color: #30292b;
+    line-height: 48px;
+}
+
+.main-all-heading  span{
+   font-weight: 300;
+}
+
+@media screen and (max-width: 600px){
+  .main-all-heading {
+    font-size: 32px;
+    font-weight: 300;
+    color: #30292b;
+    line-height: 38px;
+  }
+}
+
 
 /*==========================================*/
 /* Dr bell css*/
 /*==========================================*/
-#kenytChatBubble.style1{margin-bottom: 100px !important;}
+
+#kenytChatBubble.style1{
+  margin-bottom: 100px !important;
+}
 
 /*==========================================*/
 /* navigation css*/
 /*==========================================*/
 
-.bg-nav-clss{background-color: #fff; margin-bottom: 105px !important;}
-.bg-nav-clss.bg-on-scroll-nav {background-color: #fff !important;}
-.bg-nav-clss.bg-on-scroll-nav img {width: 77%;}
-.navbar-light .navbar-nav .nav-link{color: #30292b;font-size: 16px;font-weight: 400;padding-left: 20px;padding-right: 20px;}
-.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link{font-weight: 600;border-bottom: 3px solid #ed1d26;}
-.navbar-light .navbar-toggler{color: #30292b;border: none;}
-@media screen and (max-width: 1600px){.navbar-light .navbar-nav .nav-link{color: #30292b;font-size: 16px;font-weight: 400;padding-left: 15px;padding-right: 15px;}}
-@media screen and (max-width: 1450px){.navbar-light .navbar-nav .nav-link{color: #30292b;font-size: 16px;font-weight: 400;padding-left: 12px;padding-right: 12px;}}
-@media screen and (max-width: 1370px){.navbar-light .navbar-nav .nav-link{color: #30292b;font-size: 14px;font-weight: 400;padding-left: 9px;padding-right: 9px;}}
+ .bg-nav-clss{background-color: #fff; margin-bottom: 105px !important;}
+ .bg-nav-clss.bg-on-scroll-nav {background-color: #fff !important;}
+ .bg-nav-clss.bg-on-scroll-nav img {
+  width: 77%;
+ }
+
+ .navbar-light .navbar-nav .nav-link{
+  color: #30292b;
+  font-size: 16px;
+  font-weight: 400;
+  padding-left: 20px;
+  padding-right: 20px;
+ }
+
+ .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link{
+   font-weight: 600;
+   border-bottom: 3px solid #ed1d26;
+ }
+
+ .navbar-light .navbar-toggler{
+  color: #30292b;
+  border: none;
+ }
+
+ @media screen and (max-width: 1600px){
+
+    .navbar-light .navbar-nav .nav-link{
+    color: #30292b;
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 15px;
+    padding-right: 15px;
+   }
+ }
+
+ @media screen and (max-width: 1450px){
+
+    .navbar-light .navbar-nav .nav-link{
+    color: #30292b;
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 12px;
+    padding-right: 12px;
+   }
+ }
+
+ @media screen and (max-width: 1370px){
+
+    .navbar-light .navbar-nav .nav-link{
+    color: #30292b;
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 9px;
+    padding-right: 9px;
+   }
+ }
+
+
 /*==========================================*/
 /* Banner css*/
 /*==========================================*/
@@ -712,24 +805,15 @@ hr.bannerhr {
   text-decoration: none !important;
 }
 
-.panel-title a{
-  display: flex;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 40px;
-}
-
-
 .panel-title a, .panel-title a:hover {
   text-decoration: none !important;
   color: #30292b;
+  font-size: 21px;
+  font-weight: 500;
 }
 
 .panel-title a span {
-  width: 40px;
-  height: 40px;
-  padding: 8px 8px;
-  line-height: 25px;
+  padding: 10px;
   margin-right: 10px;
   background: linear-gradient(359deg, #03619a 0%, #047dc7 100%);
   color: #ffffff;
@@ -759,7 +843,7 @@ hr.bannerhr {
 }
 
 .para-faq {
-  padding: 0px 40px 0 60px;
+  padding: 20px 40px 0 60px;
   font-size: 16px;
   color: #636363;
 }
@@ -770,13 +854,12 @@ hr.bannerhr {
     color: #30292b;
     font-size: 18px;
     font-weight: 500;
-    line-height: 25px;
   }
 
   .panel-title a span {
-    padding: 8px 10px;
+    padding: 8px;
     font-size: 16px;
-/*    line-height: 40px;*/
+    line-height: 40px;
   }
 
   .para-faq {
@@ -1496,18 +1579,18 @@ hr.bannerhr {
 @media screen and (max-width: 600px){
 
  .combination_box_border{
-  margin-bottom: 20px;
-  max-height: 300px;
-  height: 300px;
+  margin-bottom: 30px;
+  max-height: auto;
+  height: auto;
    padding: 30px;
    border: 1px solid #636363;
 }
 
 
 .combination_box_border_two{
-   margin-bottom: 20px;
-   max-height: 300px;
-  height: 300px;
+   margin-bottom: 30px;
+   max-height: auto;
+   height: 320px;
    padding: 30px;
    border: 1px solid #636363;
 }
@@ -1521,25 +1604,6 @@ hr.bannerhr {
   width: 40%;
 }
 
-}
-
-@media screen and (max-width: 600px){
-   .combination_box_border{
-  margin-bottom: 20px;
-  max-height: 320px;
-  height: 320px;
-   padding: 30px;
-   border: 1px solid #636363;
-}
-
-
-.combination_box_border_two{
-   margin-bottom: 20px;
-   max-height: 320px;
-  height: 320px;
-   padding: 30px;
-   border: 1px solid #636363;
-}
 }
 
 
