@@ -82,9 +82,7 @@
                 <div class="resultsImg"> <img src="images/video/Hair-Growth-1-before.webp" alt="01 hairgrowth" loading="lazy"> <img src="images/video/Hair-Growth-1-after.webp" alt="01 hairgrowth" class="pt-1" loading="lazy"> </div>
                 <div class="test-v-cls">
                   <a class="popup-vimeo" href="https://player.vimeo.com/video/936145609"><img src="images/test-play-btn.webp" class="text-play-btn-img img-fluid" alt="blue btn">Nikita Chhatriya</a>
-                  <a class="popup-vimeo" href="https://player.vimeo.com/video/936145609">
-                    <p class="test-v-para">Dr. Batra’s® Hair Treatment was a game-changer for my hair loss.</p>
-                  </a>
+                  <p class="test-v-para">Dr. Batra’s® Hair Treatment was a game-changer for my hair loss.</p>
                 </div>
               </div>
             </div>
@@ -600,9 +598,9 @@
       <div class="row">
         <div class="col-md-6 pl-0 pr-0"> <img src="images/consult-form.webp" alt="Consult form" class="img-fluid" width="" height=""> </div>
         <div class="col-md-6 pl-0 pr-0 bg-white">
-          <div class="form_div_cls">
+            <div class="form_div_cls">
             <div><h2 class="main-all-heading">Request a call back</h2></div>
-            <div>
+            <div class="form-top-new">
               <form id="enquiryForm" method="post" novalidate="novalidate">
               <div class="col-12 pl-0 pr-0">
                 <div class="row form-group">
@@ -899,27 +897,7 @@
       <button type="button" class="btn cancel" onclick="closeForm()"><img src="images/cancel.webp" alt="cancel" class="img-fluid" width="40" height="40" loading="lazy"></button>
        <h3>Request a call back</h3>
       <div class="myForm-top-form">
-        <form id="enquiryForm" method="post" novalidate="novalidate">
-          <div class="col-12 pl-0 pr-0">
-            <div class="row form-group">
-              <div class="col-12 pb-3">
-                <label for="name">Full Name*</label>
-                <input class="form-control bg-transparent" placeholder="Enter full name" name="name" id="name"> </div>
-              <div class="col-12 pb-3">
-                <label for="name">Mobile Number*</label>
-                <input type="tel" class="form-control bg-transparent" placeholder="Enter 10 digit mobile number" name="mobile" id="mobile"> </div>
-              <div class="col-12 pb-2">
-                <label for="name">Email ID</label>
-                <input type="tel" class="form-control bg-transparent" placeholder="Enter Email ID (optional)" name="email" id="email"> </div>
-            </div>
-            <div class="col-12 pl-0 pr-0">
-              <div class="form-group form-check align-items-center">
-                <label class="form-check-label small" for="conditions">
-                  <input type="checkbox" name="chk1" class="form-check-input mt-0" id="chk1">I understand and accept the <a href="https://www.drbatras.com/privacy-policy" class="terms-con-font-cls">terms and conditions</a> </label>
-              </div>
-            </div>
-          </div>
-          <input type="submit" class="btn book_btn d-block tipleadbtn" name="btn_submit" value="CALL ME" id="btn_submit"> </form>
+        
       </div>
     </div>
   </div>
@@ -927,6 +905,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js" data-cfasync="false"></script>
   <script src="js/owl.carousel.min.js" data-cfasync="false"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+
+
   <script>
   $(window).scroll(function() {
     $('nav').toggleClass('bg-on-scroll-nav', $(this).scrollTop() > 200)
@@ -1135,7 +1115,7 @@ scrollToTop();
     $homeSlider.trigger("destroy.owl.carousel").removeClass("owl-carousel");
   }
   </script>
-  <script>
+  <!-- <script>
   $(function() {
     $(".popup-youtube, .popup-vimeo").magnificPopup({
       disableOn: 700,
@@ -1146,8 +1126,8 @@ scrollToTop();
       fixedContentPos: !1
     })
   });
-  </script>
-  <script>
+  </script> -->
+  <!-- <script>
   function openForm() {
     document.getElementById("myForm").style.display = "block";
     $('#myForm .myForm-top-form').append($('.form-top-new'));
@@ -1159,12 +1139,28 @@ scrollToTop();
     $('.contactFormHolder .contactForm').append($('.form-top-new'));
     document.getElementById("myForm").style.display = "none";
   }
-  </script>
+  </script> -->
+
   <script>
-  $(function() {
-    $('.popup-youtube, .popup-vimeo').magnificPopup({
+  function openForm() {
+    document.getElementById("myForm").style.display = "block";
+    $('#myForm .myForm-top-form').append($('.form-top-new'));
+    $('.form_div_cls').hide();
+  }
+
+  function closeForm() {
+    $('.form_div_cls').show();
+    $('.form_div_cls').append($('.form-top-new'));
+    document.getElementById("myForm").style.display = "none";
+  }
+  </script>
+
+  <script>
+    $(document).ready(function() {
+    $('a.popup-vimeo').magnificPopup({
       type: 'iframe',
       mainClass: 'mfp-fade',
+      closeBtnInside: true,
       removalDelay: 160,
       preloader: false,
       fixedContentPos: true
@@ -1250,6 +1246,7 @@ scrollToTop();
     function showProjectsbyTestmonilas(testmonilas) {
       var owl = $("#owl-demo").data('owl.carousel');
       var nb = owl.items().length;
+
       console.log(nb)
       for(var i = 0; i < (nb - 0); i++) {
         owl.remove(i);
@@ -1265,11 +1262,20 @@ scrollToTop();
           owl.add($(this).clone());
           owl.refresh();
         });
-      }
+      };
+$('a.popup-vimeo').magnificPopup({
+      type: 'iframe',
+      mainClass: 'mfp-fade',
+      closeBtnInside: true,
+      removalDelay: 160,
+      preloader: false,
+      fixedContentPos: true
+    });
     }
     $('#owl-demo .project').clone().appendTo($('#projects-copy'));
     $('#project-terms a').click(function(e) {
       e.preventDefault();
+
       $('#project-terms a').removeClass('active');
       testmonilas = $(this).attr('ID');
       $(this).addClass('active');
