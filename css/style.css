@@ -382,3 +382,20 @@ hr.bannerhr {width: 100px;border: 3px solid #0074ad }
     background: url(../images/consult-form.webp) left bottom no-repeat;
     background-size: cover;
 }
+
+.offer-background-sec {
+    background: #3096d3;
+}
+.offer-head-main{padding-top:15px;color:#fff;font-size:20px;line-height:26px}
+@media (max-width:1600px){
+.offer-head-main{padding-top:15px;color:#fff;font-size:16px;line-height:21px}
+}
+@media (max-width:1200px){
+.offer-head-main{padding-top:15px;color:#fff;font-size:16px;line-height:21px}
+}
+@media (max-width:1024px){
+.offer-head-main{padding-top:15px;color:#fff;font-size:14px;line-height:18px}
+}
+@media (max-width:600px){
+.offer-head-main{padding-top:15px;color:#fff;font-size:18px;line-height:25px}
+}
