@@ -335,7 +335,7 @@ hr.bannerhr {width: 100px;border: 3px solid #0074ad }
 .Xogen_heding_banner{color:#1c82c4;font-family:"Playfair Display",serif;font-weight:900;font-size:55px}
 .Xogen_Sub_heding_banner{font-size:29px;font-weight:400;margin-bottom:0}
 .Xogen_black_heding{display: none; margin-top:30px;font-size:38px;font-weight:600;color:#4b4b4b;text-transform:uppercase;}
-.xogen_banner_content{margin-bottom:20px;}
+.xogen_banner_content{padding-top:40px;margin-bottom:20px;}
 .xogen_banner_content img{width:70%}
 @media (max-width:1680px){
 .Xogen_heding_banner{font-size:50px}
