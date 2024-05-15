@@ -415,12 +415,13 @@ hr.bannerhr {width: 100px;border: 3px solid #0074ad }
 
 .banner_list_xogen{
   padding-top: 22px;
+  padding-bottom: 10px;
 /*  list-style: none;*/
-  padding-inline-start: 20px;
+  padding-inline-start: 23px;
 }
 
 .banner_list_xogen li{
-  font-size: 21px;
+  font-size: 24px;
   font-weight: 600;
   color: #464646;
 }
@@ -500,7 +501,7 @@ hr.bannerhr {width: 100px;border: 3px solid #0074ad }
   .blue-strip-offer-section{text-align:right;color:#212121;margin-top:-20px}
 }
 @media (max-width:992px){
-  .blue-strip-offer-section{text-align:right;color:#212121;margin-top:-15px;font-size:12px}
+  .blue-strip-offer-section{text-align:right;color:#212121;margin-top:-12px;font-size:12px}
 }
 @media (max-width:600px){
   .blue-strip-offer-section{text-align:right;color:#212121; padding-bottom:20px;margin-top:-155px;font-size:14px; font-weight: 600; writing-mode: vertical-rl;text-orientation: mixed;transform: scale(1);}
