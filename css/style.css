@@ -310,7 +310,19 @@ hr.bannerhr {width: 100px;border: 3px solid #0074ad }
     background: url(../images/xogen-ban-bg.webp) bottom center no-repeat;
     background-size: cover;
     margin-top: 95px;
-    padding-top: 10px;
+/*    padding-top: 10px;*/
+}
+
+@media (max-width:1024px){
+  .banner-section-cls{
+    margin-top: 85px;
+  }
+}
+
+@media (max-width:992px){
+   .banner-section-cls{
+    margin-top: 99px;
+  }
 }
 
 @media (max-width:600px){
@@ -322,15 +334,15 @@ hr.bannerhr {width: 100px;border: 3px solid #0074ad }
 .xogen-list-para li{padding-right:20px;color:#212121}
 .Xogen_heding_banner{color:#1c82c4;font-family:"Playfair Display",serif;font-weight:900;font-size:55px}
 .Xogen_Sub_heding_banner{font-size:29px;font-weight:400;margin-bottom:0}
-.Xogen_black_heding{margin-top:30px;font-size:38px;font-weight:600;color:#4b4b4b;text-transform:uppercase;display:inline-flex}
-.xogen_banner_content{margin-bottom:60px}
-.xogen_banner_content img{width:50%}
+.Xogen_black_heding{display: none; margin-top:30px;font-size:38px;font-weight:600;color:#4b4b4b;text-transform:uppercase;}
+.xogen_banner_content{margin-bottom:20px;}
+.xogen_banner_content img{width:70%}
 @media (max-width:1680px){
 .Xogen_heding_banner{font-size:50px}
 .Xogen_Sub_heding_banner{font-size:26px}
 .xogen_banner_content{margin-bottom:25px}
 .xogen_banner_content img{width:70%}
-.Xogen_black_heding{font-size:28px}
+/*.Xogen_black_heding{font-size:28px}*/
 }
 @media (max-width:1600px){
 .xogen_banner_content{padding-top:50px;margin-bottom:25px}
@@ -342,17 +354,23 @@ hr.bannerhr {width: 100px;border: 3px solid #0074ad }
 @media (max-width:1366px){
 .Xogen_heding_banner{font-size:45px}
 .Xogen_Sub_heding_banner{font-size:24px}
-.Xogen_black_heding{font-size:24px}
+/*.Xogen_black_heding{font-size:24px}*/
 }
 @media (max-width:1024px){
 .Xogen_heding_banner{font-size:30px}
 .Xogen_Sub_heding_banner{font-size:16px}
+.xogen_banner_content{
+  padding-right: 50px;
+}
 .xogen_banner_content img{width:60%}
-.Xogen_black_heding{margin-top:15px;font-size:18px}
+/*.Xogen_black_heding{margin-top:15px;font-size:18px}*/
 }
 @media (max-width:992px){
 .Xogen_Sub_heding_banner{font-size:21px}
 .Xogen_heding_banner{font-size:36px}
+.xogen_banner_content{
+  padding-right: 10px;
+}
 }
 @media (max-width:800px){
 .Xogen_Sub_heding_banner{font-size:21px}
@@ -363,18 +381,82 @@ hr.bannerhr {width: 100px;border: 3px solid #0074ad }
 .xogen_banner_content{padding-top:20px}
 .xogen-list-para{list-style:none;display:inline;padding-inline-start:0px}
 .xogen-list-para li{padding-bottom:20px}
+ .Xogen_black_heding{
+  display: none;
+ }
 }
+
+@media (max-width:600px){
+  .Xogen_black_heding{
+    /*padding: 5px 10px;
+  display: inline;
+  font-size:24px;
+  font-weight: 500;
+  color: #fff;
+  background: linear-gradient(269deg, #083b67 0%, #187ec2 35%, #083b67 100%);*/
+  display: block;
+  margin-top:20px;font-size:38px;font-weight:600;color:#4b4b4b;text-transform:uppercase;
+}
+}
+
+
 @media (max-width:411px){
 .Xogen_heding_banner{font-size:40px}
 .Xogen_Sub_heding_banner{font-size:21px}
 .xogen_banner_content img{width:65%}
-.Xogen_black_heding{font-size:21px}
+.Xogen_black_heding{font-size:28px}
 }
 @media (max-width:384px){
 .Xogen_heding_banner{font-size:38px}
 }
 @media (max-width:375px){
 .Xogen_Sub_heding_banner{font-size:18px}
+}
+
+.banner_list_xogen{
+  padding-top: 22px;
+/*  list-style: none;*/
+  padding-inline-start: 20px;
+}
+
+.banner_list_xogen li{
+  font-size: 21px;
+  font-weight: 600;
+  color: #464646;
+}
+
+.xogen-ban-new-in-india {
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-image: url(../images/now-in-india-strip.webp);
+    background-size: auto !important;
+}
+
+@media (max-width:1024px){
+   
+.banner_list_xogen li{
+  font-size: 18px;
+  font-weight: 600;
+  color: #464646;
+}
+
+}
+
+
+@media (max-width:600px){
+  .xogen-ban-new-in-india {
+    background-image: none;
+  }
+  .banner_list_xogen{
+    padding-top: 5px;
+  }
+
+
+.banner_list_xogen li{
+  font-size: 21px;
+  font-weight: 600;
+  color: #464646;
+}
 }
 
 
@@ -398,4 +480,28 @@ hr.bannerhr {width: 100px;border: 3px solid #0074ad }
 }
 @media (max-width:600px){
 .offer-head-main{padding-top:15px;color:#fff;font-size:18px;line-height:25px}
+}
+
+
+.blue-strip-offer-section{text-align:right;color:#212121;margin-top:-35px}
+@media (max-width:1600px){
+  .blue-strip-offer-section{text-align:right;color:#212121;margin-top:-25px;font-size:16px}
+}
+@media (max-width:1500px){
+  .blue-strip-offer-section{text-align:right;color:#212121;margin-top:-25px;font-size:15px}
+}
+@media (max-width:1400px){
+  .blue-strip-offer-section{text-align:right;color:#212121;margin-top:-25px;font-size:14px}
+}
+@media (max-width:1200px){
+  .blue-strip-offer-section{text-align:right;color:#212121;margin-top:-25px;font-size:12px}
+}
+@media (max-width:1024px){
+  .blue-strip-offer-section{text-align:right;color:#212121;margin-top:-20px}
+}
+@media (max-width:992px){
+  .blue-strip-offer-section{text-align:right;color:#212121;margin-top:-15px;font-size:12px}
+}
+@media (max-width:600px){
+  .blue-strip-offer-section{text-align:right;color:#212121; padding-bottom:20px;margin-top:-155px;font-size:14px; font-weight: 600; writing-mode: vertical-rl;text-orientation: mixed;transform: scale(1);}
 }
